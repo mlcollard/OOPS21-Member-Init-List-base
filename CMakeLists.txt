@@ -19,7 +19,7 @@ if (MSVC)
     add_compile_options(/W4)
 else()
     # standard warnings
-    add_compile_options(-Wall)
+    add_compile_options(-Wall -Wno-unused-private-field)
 endif()
 
 # Assume each .cpp file is a separate application
